@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#212121"
+    android:id="@+id/compscale"
+    android:layout_height="match_parent"
+    tools:context=".level">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Easy"
+        android:id="@+id/display"
+        android:textSize="80dp"
+        android:textColor="#4caf50"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/scale"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:text="Easy"
+            android:onClick="easy"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="medium"
+            android:background="#03a9f4"
+            android:text="Medium"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="hard"
+            android:background="#f44336"
+            android:text="Hard"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa000"
+        android:onClick="start"
+        android:layout_alignParentBottom="true"
+        android:text="Start" />
+
+</RelativeLayout>
